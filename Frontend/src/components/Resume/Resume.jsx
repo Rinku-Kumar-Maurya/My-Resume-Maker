@@ -125,17 +125,21 @@ export default function Resume() {
                             <Form id={formId}>
                                 {_renderStepContent(activeStep)}
 
-                                <div className={classes.button}>
-                                    {activeStep !== 0 && (
-                                        <Button
-                                            onClick={_handleBack}
-                                            className={classes.button}
-                                            startIcon={<NavigateBeforeIcon />}
-                                        >
-                                            Back
-                                        </Button>
-                                    )}
-                                    <div className={classes.wrapper}>
+                                <div className={classes.wrapper}>
+                                    <div className={classes.navBefore}>
+                                        {activeStep !== 0 && (
+                                            <Button
+                                                onClick={_handleBack}
+                                                className={classes.buttons}
+                                                color="primary"
+                                                variant="contained"
+                                                startIcon={<NavigateBeforeIcon />}
+                                            >
+                                                Back
+                                            </Button>
+                                        )}
+                                    </div>
+                                    <div className={classes.buttons}>
                                         {isLastStep ? (
                                             <Button
                                                 disabled={isSubmitting}
@@ -143,7 +147,7 @@ export default function Resume() {
                                                 variant="contained"
                                                 color="primary"
                                                 onClick={_createAndDownloadPDF}
-                                                className={classes.button}
+                                                className={classes.buttons}
                                             >
                                                 Download
                                             </Button>
@@ -151,10 +155,11 @@ export default function Resume() {
                                             <Button
                                                 disabled={isSubmitting}
                                                 type="submit"
-                                                //variant="contained"
+                                                color="primary"
+                                                variant="contained"
                                                 //onClick={_createAndDownloadPDF}
                                                 endIcon={<NavigateNextIcon />}
-                                                className={classes.button}
+                                                className={classes.buttons}
                                             >
                                                 Next
                                             </Button>

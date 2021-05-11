@@ -28,10 +28,12 @@ export default function Profile(props) {
     
     return (
         <React.Fragment>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" align="center" gutterBottom>
                 Profile Page
             </Typography>
-            <Grid container spacing={3}>
+            
+            <Grid container spacing={4}>
+                <Grid item xs={12}></Grid>
                 <Grid item xs={12} sm={6}>
                     <InputField name={firstname.name} label={firstname.label} fullWidth />
                 </Grid>

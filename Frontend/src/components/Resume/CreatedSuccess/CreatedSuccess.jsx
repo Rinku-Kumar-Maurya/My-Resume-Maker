@@ -5,10 +5,11 @@ function CheckoutSuccess() {
   return (
     <React.Fragment>
       <Typography variant="h5" gutterBottom>
-        Thank you for using my_Resume_maker.
+        Thank you for using MY RESUME MAKER.
       </Typography>
       <Typography variant="subtitle1">
-        Please give it a start on github.
+        Please Wait
+        Your download will begin in few seconds
       </Typography>
     </React.Fragment>
   );

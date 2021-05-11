@@ -19,10 +19,11 @@ export default function Extras(props) {
 
     return (
         <React.Fragment>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" align="center" gutterBottom>
                 Extras Page
             </Typography>
             <Grid container spacing={3}>
+                <Grid item xs={12}></Grid>
                 <Grid item xs={12} md={6}>
                     <InputField name={skill1.name} label={skill1.label} fullWidth />
                 </Grid>
@@ -35,7 +36,7 @@ export default function Extras(props) {
                 <Grid item xs={12} md={6}>
                     <InputField name={skill4.name} label={skill4.label} fullWidth />
                 </Grid>
-
+                <Grid item xs={12}></Grid>
                 <Grid item xs={12} md={6}>
                     <InputField name={interest1.name} label={interest1.label} fullWidth />
                 </Grid>

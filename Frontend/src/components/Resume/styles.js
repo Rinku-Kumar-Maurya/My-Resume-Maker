@@ -4,6 +4,7 @@ export default makeStyles(theme => ({
     padding: theme.spacing(3, 0, 5)
   },
   buttons: {
+    marginTop: theme.spacing(5),
     display: 'flex',
     justifyContent: 'flex-end',
   },
@@ -18,7 +19,7 @@ export default makeStyles(theme => ({
     float: 'right'
   },
   wrapper: {
-    margin: theme.spacing(1),
+    margin: theme.spacing(3),
     position: 'relative'
   },
   buttonProgress: {

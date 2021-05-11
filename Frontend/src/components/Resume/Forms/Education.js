@@ -21,14 +21,16 @@ export default function Education(props) {
 
     return (
         <React.Fragment>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" align="center" gutterBottom>
                 Education Page
             </Typography>
+
             <Grid container spacing={3}>
+                <Grid item xs={12}></Grid>
                 <Grid item xs={12} md={6}>
                     <InputField name={college.name} label={college.label} fullWidth />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={3}>
                     <DatePickerField
                         name={fromyear1.name}
                         label={fromyear1.label}
@@ -37,7 +39,7 @@ export default function Education(props) {
                         fullWidth
                     />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={3}>
                     <DatePickerField
                         name={toyear1.name}
                         label={toyear1.label}
@@ -52,11 +54,11 @@ export default function Education(props) {
                 <Grid item xs={12} >
                     <InputField name={description1.name} label={description1.label} fullWidth />
                 </Grid>
-
+                <Grid item xs={12}></Grid>
                 <Grid item xs={12} md={6}>
                     <InputField name={school.name} label={school.label} fullWidth />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={3}>
                     <DatePickerField
                         name={fromyear2.name}
                         label={fromyear2.label}
@@ -65,7 +67,7 @@ export default function Education(props) {
                         fullWidth
                     />
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={3}>
                     <DatePickerField
                         name={toyear2.name}
                         label={toyear2.label}

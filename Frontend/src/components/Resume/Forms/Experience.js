@@ -19,10 +19,11 @@ export default function Experience(props) {
 
     return (
         <React.Fragment>
-            <Typography variant="h6" gutterBottom>
+            <Typography variant="h6" align="center" gutterBottom>
                 Experience Page
             </Typography>
-            <Grid container spacing={3}>
+            <Grid container spacing={4}>
+                <Grid item xs={12}></Grid>
                 <Grid item xs={12} md={6}>
                     <InputField name={institute1.name} label={institute1.label} fullWidth />
                 </Grid>
@@ -35,7 +36,7 @@ export default function Experience(props) {
                 <Grid item xs={12} md={6}>
                     <InputField name={experienceDescription1.name} label={experienceDescription1.label} fullWidth />
                 </Grid>
-
+                <Grid item xs={12}></Grid>
                 <Grid item xs={12} md={6}>
                     <InputField name={institute2.name} label={institute2.label} fullWidth />
                 </Grid>
