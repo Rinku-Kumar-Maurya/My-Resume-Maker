@@ -157,7 +157,6 @@ export default function Resume() {
                                                 type="submit"
                                                 color="primary"
                                                 variant="contained"
-                                                //onClick={_createAndDownloadPDF}
                                                 endIcon={<NavigateNextIcon />}
                                                 className={classes.buttons}
                                             >
