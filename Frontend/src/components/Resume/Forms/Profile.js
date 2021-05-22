@@ -1,16 +1,4 @@
 import React, { Component } from 'react';
-/*
-import { Card, CardHeader, CardContent } from '@material-ui/core';
-import NavigateNextIcon from '@material-ui/icons/NavigateNext';
-import NavigateBeforeIcon from '@material-ui//icons/NavigateBefore';
-import EmailIcon from '@material-ui/icons/Email';
-import PhoneIcon from '@material-ui/icons/Phone';
-import LanguageIcon from '@material-ui/icons/Language';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import { Row, Col } from 'react-bootstrap';
-*/
 import {Grid, Typography} from '@material-ui/core';
 import {InputField} from '../../FormFields';
 
@@ -56,23 +44,3 @@ export default function Profile(props) {
         </React.Fragment>
     );
 }
-
-/*
-const styles = theme => ({
-    margin: {
-        margin: theme.spacing.unit * 1,
-    },
-    padding: {
-        padding: theme.spacing.unit,
-    },
-});
-
-class Profile extends Component {
-    continue = e => {
-        e.preventDefault ();
-        this.props.nextStep();
-    };
-}
-
-export default Profile
-*/
