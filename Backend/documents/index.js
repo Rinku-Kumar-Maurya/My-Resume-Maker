@@ -76,6 +76,7 @@ module.exports = values => {
           display: block;
           position: relative;
           margin: auto;
+          border-radius: 25px;
           top: ;
           left: ;
           right: ;
@@ -163,7 +164,7 @@ module.exports = values => {
         }
         .top-bar {
           height: 220px;
-          background-color: #848484;
+          background-color: #8084f4;
           color: #fff;
         }
         .name {
@@ -190,12 +191,13 @@ module.exports = values => {
           display: false;
           position: absolute;
           margin: false;
+          border-radius: 25px;
           top: 60px;
           left: 2%;
           right: false;
           bottom: 0;
           width: 380px;
-          background-color: #f7e0c1;
+          background-color: #bdbfff;
           padding: 320px 30px 50px;
         }
         .mugshot {
@@ -209,7 +211,7 @@ module.exports = values => {
           height: 210px;
           width: 210px;
         }
-        .mugshot .logo {
+        .mugshot {
           margin: -23px;
         }
         .logo {
@@ -260,7 +262,7 @@ module.exports = values => {
           letter-spacing: 4px;
           font-weight: 600;
           line-height: 28px;
-          margin: 60px auto 10px;
+          margin: 60px 20px 10px 20px;
           padding-bottom: 5px;
           border-bottom: 1px solid #888;
         }
@@ -289,10 +291,10 @@ module.exports = values => {
         .separator {
           width: 300px;
           height: 2px;
-          background-color: #999;
+          background-color: #00339f;
         }
         .greyed {
-          background-color: #ddd;
+          background-color: #5d62ff;
           width: 100%;
           max-width: 580px;
           text-align: center;
@@ -324,54 +326,42 @@ module.exports = values => {
               <div class="caps name"><div class="abs-center">${firstname} ${lastname}</div></div>
           </div>
           <div class="side-bar">
-              <div class="mugshot">
-                  <div class="logo">
-                      <svg viewbox="0 0 80 80" class="rela-block logo-svg">
-                          <path d="M 10 10 L 52 10 L 72 30 L 72 70 L 30 70 L 10 50 Z" stroke-width="2.5" fill="none"/>
-                      </svg>
-                      <p class="logo-text">GT</p>
-                  </div>
-              </div>
-              <!--
-              <p class="mb-1">123 My Place Drive</p>
-              <p class="mb-1">Astoria, New York 11105</p>
-              <p class="mb-1">1-800-CALLPLZ</p>
-              -->
-              <p class="mb-1"><span style="padding-right:10px;"><i class="fas fa-envelope"></i></span>${email}</p>
-              <p class="mb-1"><span style="padding-right:10px;"><i class="fas fa-phone-square-alt"></i></span>${phone}</p>
-              `;
-  if (skill1 != '' || skill1 != null)
-    htmlTemplate += `<p class="rela-block caps side-header">Skills</p>
-                  <p class="rela-block list-thing">${skill1}</p>`;
-  if (skill2 != '' || skill2 != null)
-    htmlTemplate += `<p class="rela-block list-thing">${skill2}</p>`;
-  if (skill3 != '' || skill3 != null)
-    htmlTemplate += `<p class="rela-block list-thing">${skill3}</p>`;
-  if (skill4 != '' || skill4 != null)
-    htmlTemplate += `<p class="rela-block list-thing">${skill4}</p>`;
+              <p class="mb-1"><span style="padding-right:10px;"><i class="fas fa-envelope"></i>Email: </span>${email}</p>
+              <p class="mb-1"><span style="padding-right:10px;"><i class="fas fa-phone-square-alt"></i>Phone:</span>${phone}</p>
+              `;         
+
+              if (skill1 != '' || skill1 != null)
+                htmlTemplate += `<p class="rela-block caps side-header">Skills</p>
+                              <p class="rela-block list-thing">${skill1}</p>`;
+              if (skill2 != '' || skill2 != null)
+                htmlTemplate += `<p class="rela-block list-thing">${skill2}</p>`;
+              if (skill3 != '' || skill3 != null)
+                htmlTemplate += `<p class="rela-block list-thing">${skill3}</p>`;
+              if (skill4 != '' || skill4 != null)
+                htmlTemplate += `<p class="rela-block list-thing">${skill4}</p>`;
 
 
-  if (interest1 != '' || interest1 != null)
-    htmlTemplate += `<p class="rela-block caps side-header">Interests</p>
-                  <p class="rela-block list-thing">${interest1}</p>`;
-  if (interest2 != '' || interest2 != null)
-    htmlTemplate += `<p class="rela-block list-thing">${interest2}</p>`;
-  if (interest3 != '' || interest3 != null)
-    htmlTemplate += `<p class="rela-block list-thing">${interest3}</p>`;
-  if (interest4 != '' || interest4 != null)
-    htmlTemplate += `<p class="rela-block list-thing">${interest4}</p>`;
+              if (interest1 != '' || interest1 != null)
+                htmlTemplate += `<p class="rela-block caps side-header">Interests</p>
+                              <p class="rela-block list-thing">${interest1}</p>`;
+              if (interest2 != '' || interest2 != null)
+                htmlTemplate += `<p class="rela-block list-thing">${interest2}</p>`;
+              if (interest3 != '' || interest3 != null)
+                htmlTemplate += `<p class="rela-block list-thing">${interest3}</p>`;
+              if (interest4 != '' || interest4 != null)
+                htmlTemplate += `<p class="rela-block list-thing">${interest4}</p>`;
 
 
-  htmlTemplate += `
-              </div>
+              htmlTemplate += `
+          </div>
               <div class="rela-block content-container">
               <!--
               <h2 class="rela-block caps title">Jr Front-End Developer</h2>
               <div class="rela-block separator"></div>
               -->
               <div class="rela-block caps greyed">Profile</div>
-              <p class="rela-block social mb-0"><span style="padding-right: 15px; font-size="20px;"><i class="fab fa-github"></i></span>${github}</p>
-              <p class="rela-block social mb-4"><span style="padding-right: 15px; font-size="20px;"><i class="fab fa-linkedin"></i></span>${linkedin}</p>			
+              <p class="rela-block social mb-0"><span style="padding-right: 15px; font-size="20px;"><i class="fab fa-github"></i>Github: </span>${github}</p>
+              <p class="rela-block social mb-4"><span style="padding-right: 15px; font-size="20px;"><i class="fab fa-linkedin"></i>LinkedIn: </span>${linkedin}</p>			
               
               
               <div class="rela-block caps greyed">Education</div>
@@ -405,7 +395,7 @@ module.exports = values => {
               <h3>${title3}</h3>
               <p class="light mt-1 mb-2" style="font-size:17px;"><span class="mr-2"><i class="fas fa-link"></i></span>${link3}</p>
               <p class="justified" style="font-size:17px;">${projectDescription3}</p>
-              
+
           </div>
       </div>
       </body>

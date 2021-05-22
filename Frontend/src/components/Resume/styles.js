@@ -1,4 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
+
 export default makeStyles(theme => ({
   stepper: {
     padding: theme.spacing(3, 0, 5)
@@ -7,6 +8,7 @@ export default makeStyles(theme => ({
     marginTop: theme.spacing(5),
     display: 'flex',
     justifyContent: 'flex-end',
+    color: 'white'
   },
   button: {
     marginTop: theme.spacing(3),
@@ -21,6 +23,13 @@ export default makeStyles(theme => ({
   wrapper: {
     margin: theme.spacing(3),
     position: 'relative'
+  },
+  allignCenter: {
+    marginTop: theme.spacing(5),
+    display: 'flex',
+    left: '50%', top: '50%',
+    transform: 'translate(-50%, -50%)',
+    color: 'white',
   },
   buttonProgress: {
     position: 'absolute',
